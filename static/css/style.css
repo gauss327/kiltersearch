@@ -1,0 +1,51 @@
+/* Main page layout */
+body {
+    font-family: Arial, sans-serif;  /* Simple, readable font */
+    max-width: 800px;               /* Limit width for readability */
+    margin: 0 auto;                 /* Center the content */
+    padding: 20px;                  /* Add some space around content */
+}
+
+/* Search box styling */
+.search-box {
+    width: 100%;                    /* Full width */
+    padding: 10px;                  /* Space inside the box */
+    font-size: 16px;                /* Comfortable text size */
+    margin-bottom: 20px;            /* Space below the search box */
+    border: 1px solid #ccc;         /* Simple border */
+    border-radius: 4px;             /* Slightly rounded corners */
+}
+
+/* Each search result box */
+.result {
+    border: 1px solid #ddd;         /* Light border */
+    padding: 15px;                  /* Space inside the result box */
+    margin-bottom: 10px;            /* Space between results */
+    background-color: #f9f9f9;      /* Light background */
+}
+
+/* Problem name styling */
+.name {
+    font-weight: bold;              /* Make the name stand out */
+    font-size: 18px;                /* Slightly larger text */
+    margin-bottom: 5px;             /* Space below the name */
+}
+
+/* Setter name styling */
+.setter {
+    color: #666;                    /* Gray color for less emphasis */
+    margin-bottom: 5px;             /* Space below the setter */
+}
+
+/* Similarity score styling */
+.similarity {
+    color: #666;                    /* Gray color */
+    font-size: 14px;                /* Smaller text */
+    margin-bottom: 5px;             /* Space below the score */
+}
+
+/* Description styling */
+.description {
+    color: #333;                    /* Dark gray for readability */
+    margin-top: 10px;               /* Space above the description */
+} 

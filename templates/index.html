@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kilterboard Search</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Main heading -->
+    <h1>Kilterboard Problem Search</h1>
+    
+    <!-- Search input box -->
+    <input type="text" 
+           class="search-box" 
+           placeholder="Search for problems..." 
+           id="searchInput">
+    
+    <!-- Container for search results -->
+    <div id="results"></div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="{{ url_for('static', filename='js/search.js') }}"></script>
+</body>
+</html> 
