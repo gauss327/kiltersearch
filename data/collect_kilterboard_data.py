@@ -23,21 +23,25 @@ def fetch_kilterboard_data(db_path: str = str(DB_PATH)) -> List[Dict]:
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         
-        # Query the climbs table with text-focused columns
+        # Query the climbs table with actual columns
         cursor.execute("""
             SELECT 
                 uuid,
                 name,
                 description,
-                setter_username,
-                angle,
+                hsm,
                 edge_left,
                 edge_right,
                 edge_bottom,
                 edge_top,
-                frames
+                angle,
+                frames_count,
+                frames_pace,
+                frames,
+                is_draft,
+                is_listed,
+                created_at
             FROM climbs
-            WHERE is_listed = 1
         """)
         
         # Get column names
